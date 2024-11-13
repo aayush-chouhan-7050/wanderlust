@@ -60,8 +60,8 @@ async function main() {
   await mongoose.connect(atlasDB_URL);
 
 }
-app.listen(8080,()=>{
-    console.log("Listening to Port : 8080 ");
+app.listen(10000,()=>{
+    console.log("Listening to Port : 10000 ");
 })
 
 app.use(passport.initialize());
