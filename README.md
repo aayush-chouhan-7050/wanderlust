@@ -20,8 +20,8 @@ Wanderlust is a travel accommodation platform inspired by Airbnb, allowing users
 - **Frontend**: HTML5, CSS3, JavaScript (with Bootstrap for styling)
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Authentication**: Session-based or JWT (whichever you're using)
-- **File Upload**: Cloudinary or similar service (based on your CLOUD_API_* env variables)
+- **Authentication**: Session-based or JWT 
+- **File Upload**: Cloudinary or similar service 
 - **Hosting**: Render
 
 ## Getting Started
