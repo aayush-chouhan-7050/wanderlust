@@ -1,22 +1,27 @@
 # Wanderlust
 
-Wanderlust is a travel discovery and planning web application that helps users find exciting destinations, plan their trips, and share their experiences with others. This project is designed to offer a seamless and engaging experience for travel enthusiasts.
+Wanderlust is a travel accommodation platform inspired by Airbnb, allowing users to discover, list, and review unique places to stay around the world.
 
 ## Features
 
-- **Destination Discovery**: Browse through a curated list of destinations with detailed information and stunning images.
-- **Trip Planner**: Create and manage travel itineraries, including accommodation, transportation, and activities.
-- **User Reviews**: Read and write reviews for destinations and travel experiences.
-- **User Registration and Login**: Securely register and log in to access personalized features.
-- **Activity Tracking**: Track user activities on the website for a customized experience.
-- **Responsive Design**: Fully responsive design for an optimal experience on both desktop and mobile devices.
+- **User Authentication**: Secure sign-up and login system
+- **Listing Management**:
+  - Create, edit, update, and delete property listings
+  - Upload listing images
+  - Add detailed property information (title, description, price, location, etc.)
+- **Property Categories**: Filter listings by various categories (Iconic City, Room, Castle, Farm, etc.)
+- **Review System**:
+  - Write and edit reviews for properties
+  - Rate properties on a 5-star scale
+- **Responsive Design**: Works on both desktop and mobile devices
 
 ## Tech Stack
 
-- **Frontend**: React.js, HTML5, CSS3
+- **Frontend**: HTML5, CSS3, JavaScript (with Bootstrap for styling)
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
+- **Authentication**: Session-based or JWT 
+- **File Upload**: Cloudinary or similar service 
 - **Hosting**: Render
 
 ## Getting Started
@@ -24,79 +29,83 @@ Wanderlust is a travel discovery and planning web application that helps users f
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- npm (v6 or higher) or yarn (v1 or higher)
+- npm (v6 or higher)
 - MongoDB (local or cloud-based)
 
 ### Installation
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/wanderlust.git
+    git clone https://github.com/aayush-chouhan-7050/wanderlust.git
     cd wanderlust
     ```
 
 2. **Install dependencies:**
     ```bash
     npm install
-    # or
-    yarn install
     ```
 
 3. **Set up environment variables:**
-    Create a `.env` file in the root directory and add the following:
+    Create a `.env` file in the root directory with the following:
     ```env
-    MONGODB_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
-    PORT=your_port
+    CLOUD_API_KEY=your_cloudinary_key
+    CLOUD_API_SECRET=your_cloudinary_secret
+    CLOUD_NAME=your_cloudinary_name
+    DB_URL=your_mongodb_connection_string
+    MAP_TOKEN=your_map_provider_token
+    SECRET=your_session_secret
     ```
 
 4. **Start the development server:**
     ```bash
-    npm run dev
-    # or
-    yarn dev
+    node app.js
     ```
 
-5. **Open your browser and navigate to:**
+5. **Access the application:**
+    Open your browser and navigate to:
     ```
-    http://localhost:your_port
+    http://localhost:3000
     ```
 
 ## Usage
 
-- **Browse Destinations**: Explore various travel destinations with comprehensive details.
-- **Plan Your Trip**: Use the trip planner to organize your travel itinerary.
-- **Read and Write Reviews**: Share your travel experiences and read others' reviews.
-- **User Account**: Register or log in to access personalized features and activity tracking.
+- **For Guests**:
+  - Browse available listings
+  - View listing details (description, price, location, etc.)
+  - Read reviews from other users
 
-## Contributing
+- **For Hosts**:
+  - Create new listings with:
+    - Title and description
+    - Price and location details
+    - Property images
+    - Category selection (Room, Castle, Beach, etc.)
+  - Manage existing listings
+  - View and respond to reviews
 
-Contributions are welcome! Please follow these steps to contribute:
+- **For All Users**:
+  - Create and edit reviews
+  - Rate properties on a 5-star scale
+  - Manage your account
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature-name`).
-6. Open a pull request.
+## Project Structure
+
+Key components include:
+- User authentication system
+- Listing creation/editing forms
+- Review submission interface
+- Property display cards
+- Category filtering
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
-
-- [React](https://reactjs.org/)
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Render](https://render.com/)
-
 ## Contact
 
-For any inquiries or issues, please contact:
+For any questions or issues, please contact:
 
 - **Name**: Aayush Chouhan
-- **Email**: [aayushchouhan7050@gmail.com](mailto:your.email@example.com)
+- **Email**: [aayushchouhan7050@gmail.com](mailto:aayushchouhan7050@gmail.com)
 - **GitHub**: [aayush-chouhan-7050](https://github.com/aayush-chouhan-7050)
 
