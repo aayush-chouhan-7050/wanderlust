@@ -45,19 +45,19 @@ module.exports = {
   showListing: async (req, res) => {
     try {
       const { id } = req.params;
-      const listing = await Listing.findById(id)
+      const list = await Listing.findById(id)
         .populate({
           path: "reviews",
           populate: { path: "author" }
         })
         .populate("owner");
 
-      if (!listing) {
+      if (!list) {
         req.flash("error", "Listing Does Not Exist!");
         return res.redirect("/listings");
       }
 
-      res.render("listings/show", { listing });
+      res.render("listings/show", { list }); // Keep as 'list'
     } catch (error) {
       console.error("Error showing listing:", error);
       req.flash("error", "Failed to load listing");
