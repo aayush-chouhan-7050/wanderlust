@@ -38,23 +38,22 @@ Wanderlust is a travel discovery and planning web application that helps users f
 2. **Install dependencies:**
     ```bash
     npm install
-    # or
-    yarn install
     ```
 
 3. **Set up environment variables:**
     Create a `.env` file in the root directory and add the following:
     ```env
-    MONGODB_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
-    PORT=your_port
+    CLOUD_API_KEY=xxxx
+    CLOUD_API_SECRET=xxxx
+    CLOUD_NAME=xxxx
+    DB_URL=xxxx
+    MAP_TOKEN=xxxx
+    SECRET=xxxx
     ```
 
 4. **Start the development server:**
     ```bash
-    npm run dev
-    # or
-    yarn dev
+    node app.js
     ```
 
 5. **Open your browser and navigate to:**
